@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="task.css"/>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>To-Do List App</h2>
+    <input type="text" id="taskInput" placeholder="Add new task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section>
+    <h2>Product Filter</h2>
+    <select id="categoryFilter" onchange="filterProducts()"> 
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+    <select id="sortFilter" onchange="filterProducts()">
+      <option value="default">Default</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+    <div id="productList"></div>
+  </section>
+
+  <script src="task.js"></script>
+</body>
+</html>
